@@ -60,6 +60,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DigitalCalligraphyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DigitalCalligraphyDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form_btsx.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +132,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DigitalCalligraphyDataSet.xsc">
+      <DependentUpon>DigitalCalligraphyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalCalligraphyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DigitalCalligraphyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DigitalCalligraphyDataSet.xss">
+      <DependentUpon>DigitalCalligraphyDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
