@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using 中国数字书法.demo;
 
 namespace 中国数字书法
 {
@@ -16,7 +17,8 @@ namespace 中国数字书法
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_dh());
+            //Application.Run(new Form_dh());
+            Application.Run(new TestSqlite());
         }
     }
 }
