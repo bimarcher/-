@@ -27,5 +27,28 @@ namespace 中国数字书法.demo
             MessageBox.Show("结束，result = " + result);
 
         }
+
+        private void TestSqlite_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            bo.DataDictBo dataDictBo = new bo.DataDictBo();
+            dataDictBo.Description = "Test";
+            String boInfo = dataDictBo.showBoInfo();
+            MessageBox.Show(boInfo);
+        }
+
+        private void sqLiteDataAdapter1_RowUpdated(object sender, System.Data.Common.RowUpdatedEventArgs e)
+        {
+
+        }
     }
 }
