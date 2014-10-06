@@ -45,7 +45,15 @@ namespace 中国数字书法.demo
             DataTable dt = bo.translateToDataTable(bo.listAll());
 
             foreach (DataRow dr in dt.Rows)
-                Console.WriteLine("{0}",dr[DataDictBo.DataDictAttr.KEY.ToString()]);
+                Console.WriteLine("{0}",dr[DataDictBo.TableAttr.KEY.ToString()]);
+
+            MusicBo musicBo = new MusicBo();
+            DataTable dt4MusicBo = musicBo.translateToDataTable(musicBo.listAll());
+
+            foreach (DataRow dr in dt4MusicBo.Rows)
+                Console.WriteLine("{0}", dr[MusicBo.TableAttr.TITLE.ToString()]);
+
+
                 
         }
 
