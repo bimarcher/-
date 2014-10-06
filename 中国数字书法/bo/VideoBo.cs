@@ -29,8 +29,7 @@ namespace 中国数字书法.bo
         public DataSet listAll()
         {
             String sql = "select * from " + TableName;
-            SqlConnDs sqlConn = new SqlConnDs();
-            return sqlConn.query(sql);
+            return query(sql);
         }
 
         public DataSet listByAuthor(String author)
@@ -38,8 +37,7 @@ namespace 中国数字书法.bo
             String sql = "select * from " + TableName 
                 + " where " 
                 + TableAttr.AUTHOR.ToString() + "="+author;
-            SqlConnDs sqlConn = new SqlConnDs();
-            return sqlConn.query(sql);
+            return query(sql);
         }
 
     }

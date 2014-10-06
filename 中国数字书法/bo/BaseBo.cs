@@ -12,5 +12,9 @@ namespace 中国数字书法.bo
         {
             return ds.Tables[0];
         }
-    }
+
+        public DataSet query(String sql){
+            SqlConnDs sqlConn = new SqlConnDs();
+            return sqlConn.query(sql);
+        }
 }

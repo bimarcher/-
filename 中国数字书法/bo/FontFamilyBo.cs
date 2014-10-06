@@ -29,8 +29,7 @@ namespace 中国数字书法.bo
         public DataSet listAll()
         {
             String sql = "select * from " + TableName;
-            SqlConnDs sqlConn = new SqlConnDs();
-            return sqlConn.query(sql);
+            return query(sql);
         }
 
         public DataSet listByFontFamily(String fontFamily)
@@ -38,8 +37,7 @@ namespace 中国数字书法.bo
             String sql = "select * from " + TableName
                 + " where "
                 + TableAttr.FONT_FAMILY.ToString() + "=" + fontFamily;
-            SqlConnDs sqlConn = new SqlConnDs();
-            return sqlConn.query(sql);
+            return query(sql);
         }
 
         public DataSet listByFont(String font)
@@ -47,8 +45,7 @@ namespace 中国数字书法.bo
             String sql = "select * from " + TableName
                 + " where "
                 + TableAttr.FONT.ToString() + "=" + font;
-            SqlConnDs sqlConn = new SqlConnDs();
-            return sqlConn.query(sql);
+            return query(sql);
         }
     }
 }

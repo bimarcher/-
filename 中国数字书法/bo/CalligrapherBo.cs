@@ -27,8 +27,7 @@ namespace 中国数字书法.bo
         public DataSet listAll()
         {
             String sql = "select * from " + TableName;
-            SqlConnDs sqlConn = new SqlConnDs();
-            return sqlConn.query(sql);
+            return query(sql);
         }
 
         public DataSet listByName(String name)
@@ -36,8 +35,7 @@ namespace 中国数字书法.bo
             String sql = "select * from " + TableName
                 + " where "
                 + TableAttr.NAME.ToString() + "=" + name;
-            SqlConnDs sqlConn = new SqlConnDs();
-            return sqlConn.query(sql);
+            return query(sql);
         }
 
         public DataSet listByStyle(String style)
@@ -45,8 +43,7 @@ namespace 中国数字书法.bo
             String sql = "select * from " + TableName
                 + " where "
                 + TableAttr.STYLE.ToString() + "=" + style;
-            SqlConnDs sqlConn = new SqlConnDs();
-            return sqlConn.query(sql);
+            return query(sql);
         }
     }
 }
