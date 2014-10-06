@@ -30,7 +30,7 @@ namespace 中国数字书法.bo
             return query(sql);
         }
 
-        public DataSet listByName(String name)
+        public DataSet findByName(String name)
         {
             String sql = "select * from " + TableName
                 + " where "

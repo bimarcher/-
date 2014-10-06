@@ -31,7 +31,7 @@ namespace 中国数字书法.bo
             return query(sql);       
         }
 
-        public DataSet listByCategoryAndKey(String category,String key)
+        public DataSet findByCategoryAndKey(String category,String key)
         {
             String sql = "select * from " + TableName 
                 + " where "

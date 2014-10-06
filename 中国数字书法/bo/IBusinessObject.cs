@@ -9,6 +9,7 @@ namespace 中国数字书法.bo
 {
     interface IBusinessObject
     {
+        DataSet query(String sql);
         DataTable translateToDataTable(DataSet ds);
     }
 }
