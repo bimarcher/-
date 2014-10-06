@@ -44,6 +44,8 @@ namespace 中国数字书法.demo
             dataDictBo.Description = "Test";
             String boInfo = dataDictBo.showBoInfo();
             MessageBox.Show(boInfo);
+            bo.DataDictBo bo = new bo.DataDictBo();
+            bo.listAll();
         }
 
         private void sqLiteDataAdapter1_RowUpdated(object sender, System.Data.Common.RowUpdatedEventArgs e)

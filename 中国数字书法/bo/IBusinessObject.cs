@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace 中国数字书法.bo
 {
-    class BaseBo
+    interface IBusinessObject
     {
+        String showBoInfo();
+        //List<IBusinessObject> List{
+        //    get;
+        //}
     }
 }

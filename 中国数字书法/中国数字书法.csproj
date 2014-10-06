@@ -61,9 +61,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bo\BaseBo.cs" />
+    <Compile Include="bo\CalligrapherBo.cs" />
+    <Compile Include="bo\FontFamilyBo.cs" />
+    <Compile Include="bo\FontLibraryBo.cs" />
+    <Compile Include="bo\IBusinessObject.cs" />
     <Compile Include="bo\DataDictBo.cs" />
+    <Compile Include="bo\MusicBo.cs" />
+    <Compile Include="bo\PianPangBo.cs" />
     <Compile Include="bo\SqlConnDs.cs" />
+    <Compile Include="bo\SteleBo.cs" />
+    <Compile Include="bo\StoryBo.cs" />
+    <Compile Include="bo\VideoBo.cs" />
     <Compile Include="demo\TestSqlite.cs">
       <SubType>Form</SubType>
     </Compile>

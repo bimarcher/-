@@ -28,7 +28,6 @@ public class SqlConnDs
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();//打开数据库连接
-
             }
         }
     }
@@ -42,7 +41,7 @@ public class SqlConnDs
 
         da.Fill(ds);//将数据填充到DataSet
 
-        connClose();//关闭连接
+        closeConn();//关闭连接
 
         return ds;//返回结果
 
@@ -61,14 +60,14 @@ public class SqlConnDs
 
         int x = oc.ExecuteNonQuery();//执行SQL语句
 
-        connClose();//关闭连接
+        closeConn();//关闭连接
 
         return x;   //返回一个影响行数
 
     }
 
     // 关闭数据库连接
-    public void connClose()
+    private void closeConn()
     {
         if (conn.State == ConnectionState.Open)
         {//判断数据库的连接状态，如果状态是打开的话就将它关闭
