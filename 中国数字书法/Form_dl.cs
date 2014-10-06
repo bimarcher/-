@@ -92,7 +92,7 @@ namespace 中国数字书法
         private void btn_jryz_MouseHover(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            btn.FlatAppearance.BorderSize = 0;
+            btn.FlatAppearance.BorderSize = 1;
         }
 
         private void btn_jryz_MouseLeave(object sender, EventArgs e)

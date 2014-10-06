@@ -34,7 +34,7 @@ namespace 中国数字书法
         {
             this.axWindowsMediaPlayer1.URL = null;
             //返回主菜单
-            this.Hide();
+            this.Close();
             Form_main form_main = new Form_main();
             form_main.Show();
 
@@ -81,12 +81,20 @@ namespace 中国数字书法
 
         private void btn_spsx_Click(object sender, EventArgs e)
         {
-
+            this.axWindowsMediaPlayer1.URL = null;
+            //返回主菜单
+            this.Close();
+            Form_spsx form_spsx = new Form_spsx();
+            form_spsx.Show();
         }
 
         private void btn_dzjs_Click(object sender, EventArgs e)
         {
-
+            this.axWindowsMediaPlayer1.URL = null;
+            //返回主菜单
+            this.Close();
+            Form_dzjs form_dzjs = new Form_dzjs();
+            form_dzjs.Show();
         }
 
         private void btn_lmdb_Click(object sender, EventArgs e)
@@ -96,14 +104,18 @@ namespace 中国数字书法
 
         private void btn_zxjz_Click(object sender, EventArgs e)
         {
-
+            this.axWindowsMediaPlayer1.URL = null;
+            //返回主菜单
+            this.Close();
+            Form_zxjz form_zxjz = new Form_zxjz();
+            form_zxjz.Show();
         }
 
         private void btn_btsx_Click(object sender, EventArgs e)
         {
             this.axWindowsMediaPlayer1.URL = null;
             //返回主菜单
-            this.Hide();
+            this.Close();
             Form_btsx form_btsx = new Form_btsx();
             form_btsx.Show();
         }

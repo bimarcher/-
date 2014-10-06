@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
-using System.Threading.Tasks;
 
 namespace 中国数字书法.bo
 {
-    interface IBusinessObject
+    class BaseBo:IBusinessObject
     {
-        DataTable translateToDataTable(DataSet ds);
+        public DataTable translateToDataTable(DataSet ds)
+        {
+            return ds.Tables[0];
+        }
     }
 }

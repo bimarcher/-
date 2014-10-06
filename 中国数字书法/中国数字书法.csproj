@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bo\BaseBo.cs" />
     <Compile Include="bo\CalligrapherBo.cs" />
     <Compile Include="bo\FontFamilyBo.cs" />
     <Compile Include="bo\FontLibraryBo.cs" />
@@ -77,6 +78,18 @@
     </Compile>
     <Compile Include="demo\TestSqlite.Designer.cs">
       <DependentUpon>TestSqlite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_btfd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_btfd.Designer.cs">
+      <DependentUpon>Form_btfd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_btjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_btjs.Designer.cs">
+      <DependentUpon>Form_btjs.cs</DependentUpon>
     </Compile>
     <Compile Include="DigitalCalligraphyDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -101,6 +114,12 @@
     <Compile Include="Form_dl.Designer.cs">
       <DependentUpon>Form_dl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_dzjs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_dzjs.Designer.cs">
+      <DependentUpon>Form_dzjs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,11 +132,23 @@
     <Compile Include="Form_rjjs.Designer.cs">
       <DependentUpon>Form_rjjs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_spsx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_spsx.Designer.cs">
+      <DependentUpon>Form_spsx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_yz.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_yz.Designer.cs">
       <DependentUpon>Form_yz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_zxjz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_zxjz.Designer.cs">
+      <DependentUpon>Form_zxjz.cs</DependentUpon>
     </Compile>
     <Compile Include="ImagePersonnel.cs" />
     <Compile Include="Program.cs" />
@@ -125,6 +156,12 @@
     <Compile Include="Toolimp.cs" />
     <EmbeddedResource Include="demo\TestSqlite.resx">
       <DependentUpon>TestSqlite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_btfd.resx">
+      <DependentUpon>Form_btfd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_btjs.resx">
+      <DependentUpon>Form_btjs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_btsx.resx">
       <DependentUpon>Form_btsx.cs</DependentUpon>
@@ -135,14 +172,23 @@
     <EmbeddedResource Include="Form_dl.resx">
       <DependentUpon>Form_dl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_dzjs.resx">
+      <DependentUpon>Form_dzjs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_main.resx">
       <DependentUpon>Form_main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_rjjs.resx">
       <DependentUpon>Form_rjjs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_spsx.resx">
+      <DependentUpon>Form_spsx.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_yz.resx">
       <DependentUpon>Form_yz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_zxjz.resx">
+      <DependentUpon>Form_zxjz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -181,14 +227,166 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="cartoon\btsx\6.f4v" />
+    <Content Include="cartoon\btsx\5.f4v" />
+    <Content Include="cartoon\btsx\4.f4v" />
+    <Content Include="cartoon\btsx\3.f4v" />
+    <Content Include="cartoon\btsx\1.f4v" />
+    <Content Include="cartoon\btsx\2.flv" />
     <Content Include="cartoon\dl\pt.flv" />
+    <Content Include="cartoon\dz\东.mov" />
+    <Content Include="cartoon\dz\东.png" />
+    <Content Include="cartoon\dz\东.swf" />
+    <Content Include="cartoon\dz\中.mov" />
+    <Content Include="cartoon\dz\中.png" />
+    <Content Include="cartoon\dz\中.swf" />
+    <Content Include="cartoon\dz\事.mov" />
+    <Content Include="cartoon\dz\事.png" />
+    <Content Include="cartoon\dz\事.swf" />
+    <Content Include="cartoon\dz\会.mov" />
+    <Content Include="cartoon\dz\会.png" />
+    <Content Include="cartoon\dz\会.swf" />
+    <Content Include="cartoon\dz\化.mov" />
+    <Content Include="cartoon\dz\化.png" />
+    <Content Include="cartoon\dz\化.swf" />
+    <Content Include="cartoon\dz\国.mov" />
+    <Content Include="cartoon\dz\国.png" />
+    <Content Include="cartoon\dz\国.swf" />
+    <Content Include="cartoon\dz\山.mov" />
+    <Content Include="cartoon\dz\山.png" />
+    <Content Include="cartoon\dz\山.swf" />
+    <Content Include="cartoon\dz\思.mov" />
+    <Content Include="cartoon\dz\思.png" />
+    <Content Include="cartoon\dz\思.swf" />
+    <Content Include="cartoon\dz\所.mov" />
+    <Content Include="cartoon\dz\所.png" />
+    <Content Include="cartoon\dz\所.swf" />
+    <Content Include="cartoon\dz\文.mov" />
+    <Content Include="cartoon\dz\文.png" />
+    <Content Include="cartoon\dz\文.swf" />
+    <Content Include="cartoon\dz\文2 %281%29.swf" />
+    <Content Include="cartoon\dz\文2.mov" />
+    <Content Include="cartoon\dz\文2.png" />
     <Content Include="image\bj\anh.png" />
     <Content Include="image\bj\ans.png" />
     <Content Include="image\bj\dlbj.jpg" />
+    <Content Include="image\bj\fdbj.jpg" />
+    <Content Include="image\bj\fhbj.jpg" />
     <Content Include="image\bj\gbj.png" />
+    <Content Include="image\bj\tzg.jpg" />
     <Content Include="image\bj\yzbj.jpg" />
     <Content Include="image\bj\zbj.jpg" />
+    <Content Include="image\bj\ztb.jpg" />
+    <Content Include="image\bt\fd\ltx1.jpg" />
+    <Content Include="image\bt\slt\ltx1.jpg" />
+    <Content Include="image\bt\slt\ltx2.jpg" />
+    <Content Include="image\bt\slt\ltx3.jpg" />
+    <Content Include="image\bt\slt\ltx4.jpg" />
+    <Content Include="image\bt\slt\syt1.jpg" />
+    <Content Include="image\bt\slt\syt2.jpg" />
+    <Content Include="image\bt\slt\syt3.jpg" />
+    <Content Include="image\bt\slt\syt4.jpg" />
+    <Content Include="image\bt\slt\ymt.jpg" />
+    <Content Include="image\bt\slt\ymt2.jpg" />
+    <Content Include="image\bt\slt\ymt3.jpg" />
+    <Content Include="image\bt\yt\ltx1.jpg" />
     <Content Include="image\tb\shu.ico" />
+    <Content Include="image\ltx\300x300\丑.png" />
+    <Content Include="image\ltx\300x300\之.png" />
+    <Content Include="image\ltx\300x300\之1.png" />
+    <Content Include="image\ltx\300x300\九.png" />
+    <Content Include="image\ltx\300x300\也.png" />
+    <Content Include="image\ltx\300x300\事.png" />
+    <Content Include="image\ltx\300x300\于.png" />
+    <Content Include="image\ltx\300x300\亭.png" />
+    <Content Include="image\ltx\300x300\会.png" />
+    <Content Include="image\ltx\300x300\会1.png" />
+    <Content Include="image\ltx\300x300\修.png" />
+    <Content Include="image\ltx\300x300\初.png" />
+    <Content Include="image\ltx\300x300\和.png" />
+    <Content Include="image\ltx\300x300\咸.png" />
+    <Content Include="image\ltx\300x300\在.png" />
+    <Content Include="image\ltx\300x300\少.png" />
+    <Content Include="image\ltx\300x300\山.png" />
+    <Content Include="image\ltx\300x300\岁.png" />
+    <Content Include="image\ltx\300x300\年.png" />
+    <Content Include="image\ltx\300x300\春.png" />
+    <Content Include="image\ltx\300x300\暮.png" />
+    <Content Include="image\ltx\300x300\永.png" />
+    <Content Include="image\ltx\300x300\癸.png" />
+    <Content Include="image\ltx\300x300\禊.png" />
+    <Content Include="image\ltx\300x300\稽.png" />
+    <Content Include="image\ltx\300x300\群.png" />
+    <Content Include="image\ltx\300x300\至.png" />
+    <Content Include="image\ltx\300x300\蘭.png" />
+    <Content Include="image\ltx\300x300\贤.png" />
+    <Content Include="image\ltx\300x300\长.png" />
+    <Content Include="image\ltx\300x300\阴.png" />
+    <Content Include="image\ltx\300x300\集.png" />
+    <Content Include="image\ltx\50x50\丑.png" />
+    <Content Include="image\ltx\50x50\之.png" />
+    <Content Include="image\ltx\50x50\之1.png" />
+    <Content Include="image\ltx\50x50\九.png" />
+    <Content Include="image\ltx\50x50\也.png" />
+    <Content Include="image\ltx\50x50\事.png" />
+    <Content Include="image\ltx\50x50\于.png" />
+    <Content Include="image\ltx\50x50\亭.png" />
+    <Content Include="image\ltx\50x50\会.png" />
+    <Content Include="image\ltx\50x50\会1.png" />
+    <Content Include="image\ltx\50x50\修.png" />
+    <Content Include="image\ltx\50x50\初.png" />
+    <Content Include="image\ltx\50x50\和.png" />
+    <Content Include="image\ltx\50x50\咸.png" />
+    <Content Include="image\ltx\50x50\在.png" />
+    <Content Include="image\ltx\50x50\少.png" />
+    <Content Include="image\ltx\50x50\山.png" />
+    <Content Include="image\ltx\50x50\岁.png" />
+    <Content Include="image\ltx\50x50\年.png" />
+    <Content Include="image\ltx\50x50\春.png" />
+    <Content Include="image\ltx\50x50\暮.png" />
+    <Content Include="image\ltx\50x50\永.png" />
+    <Content Include="image\ltx\50x50\癸.png" />
+    <Content Include="image\ltx\50x50\禊.png" />
+    <Content Include="image\ltx\50x50\稽.png" />
+    <Content Include="image\ltx\50x50\群.png" />
+    <Content Include="image\ltx\50x50\至.png" />
+    <Content Include="image\ltx\50x50\蘭.png" />
+    <Content Include="image\ltx\50x50\贤.png" />
+    <Content Include="image\ltx\50x50\长.png" />
+    <Content Include="image\ltx\50x50\阴.png" />
+    <Content Include="image\ltx\50x50\集.png" />
+    <Content Include="image\ltx\600x600\丑.png" />
+    <Content Include="image\ltx\600x600\之.png" />
+    <Content Include="image\ltx\600x600\之1.png" />
+    <Content Include="image\ltx\600x600\九.png" />
+    <Content Include="image\ltx\600x600\也.png" />
+    <Content Include="image\ltx\600x600\事.png" />
+    <Content Include="image\ltx\600x600\于.png" />
+    <Content Include="image\ltx\600x600\亭.png" />
+    <Content Include="image\ltx\600x600\会.png" />
+    <Content Include="image\ltx\600x600\会1.png" />
+    <Content Include="image\ltx\600x600\修.png" />
+    <Content Include="image\ltx\600x600\初.png" />
+    <Content Include="image\ltx\600x600\和.png" />
+    <Content Include="image\ltx\600x600\咸.png" />
+    <Content Include="image\ltx\600x600\在.png" />
+    <Content Include="image\ltx\600x600\少.png" />
+    <Content Include="image\ltx\600x600\山.png" />
+    <Content Include="image\ltx\600x600\岁.png" />
+    <Content Include="image\ltx\600x600\年.png" />
+    <Content Include="image\ltx\600x600\春.png" />
+    <Content Include="image\ltx\600x600\暮.png" />
+    <Content Include="image\ltx\600x600\永.png" />
+    <Content Include="image\ltx\600x600\癸.png" />
+    <Content Include="image\ltx\600x600\禊.png" />
+    <Content Include="image\ltx\600x600\稽.png" />
+    <Content Include="image\ltx\600x600\群.png" />
+    <Content Include="image\ltx\600x600\至.png" />
+    <Content Include="image\ltx\600x600\蘭.png" />
+    <Content Include="image\ltx\600x600\贤.png" />
+    <Content Include="image\ltx\600x600\长.png" />
+    <Content Include="image\ltx\600x600\阴.png" />
+    <Content Include="image\ltx\600x600\集.png" />
     <Content Include="music\bjyy\sound.mp3" />
     <Content Include="x64\SQLite.Interop.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

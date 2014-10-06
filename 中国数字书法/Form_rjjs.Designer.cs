@@ -67,6 +67,7 @@
             // btn_fh
             // 
             this.btn_fh.BackColor = System.Drawing.Color.Transparent;
+            this.btn_fh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_fh.FlatAppearance.BorderSize = 0;
             this.btn_fh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_fh.Font = new System.Drawing.Font("华文行楷", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -81,6 +82,7 @@
             // btn_lmdb
             // 
             this.btn_lmdb.BackColor = System.Drawing.Color.Transparent;
+            this.btn_lmdb.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_lmdb.FlatAppearance.BorderSize = 0;
             this.btn_lmdb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_lmdb.Font = new System.Drawing.Font("华文行楷", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -95,6 +97,7 @@
             // btn_zxjz
             // 
             this.btn_zxjz.BackColor = System.Drawing.Color.Transparent;
+            this.btn_zxjz.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_zxjz.FlatAppearance.BorderSize = 0;
             this.btn_zxjz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_zxjz.Font = new System.Drawing.Font("华文行楷", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -109,6 +112,7 @@
             // btn_dzjs
             // 
             this.btn_dzjs.BackColor = System.Drawing.Color.Transparent;
+            this.btn_dzjs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_dzjs.FlatAppearance.BorderSize = 0;
             this.btn_dzjs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_dzjs.Font = new System.Drawing.Font("华文行楷", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -123,6 +127,7 @@
             // btn_spsx
             // 
             this.btn_spsx.BackColor = System.Drawing.Color.Transparent;
+            this.btn_spsx.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_spsx.FlatAppearance.BorderSize = 0;
             this.btn_spsx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_spsx.Font = new System.Drawing.Font("华文行楷", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -137,6 +142,7 @@
             // btn_btsx
             // 
             this.btn_btsx.BackColor = System.Drawing.Color.Transparent;
+            this.btn_btsx.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_btsx.FlatAppearance.BorderSize = 0;
             this.btn_btsx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_btsx.Font = new System.Drawing.Font("华文行楷", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -151,6 +157,7 @@
             // btn_rjjs
             // 
             this.btn_rjjs.BackColor = System.Drawing.Color.Transparent;
+            this.btn_rjjs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_rjjs.FlatAppearance.BorderSize = 0;
             this.btn_rjjs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_rjjs.Font = new System.Drawing.Font("华文行楷", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
@@ -232,7 +239,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1360, 742);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel_5);

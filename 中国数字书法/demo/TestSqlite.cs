@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using 中国数字书法.bo;
 
 namespace 中国数字书法.demo
 {
@@ -40,12 +41,12 @@ namespace 中国数字书法.demo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            bo.DataDictBo dataDictBo = new bo.DataDictBo();
-            dataDictBo.Description = "Test";
-            String boInfo = dataDictBo.showBoInfo();
-            MessageBox.Show(boInfo);
-            bo.DataDictBo bo = new bo.DataDictBo();
-            bo.listAll();
+            DataDictBo bo = new DataDictBo();
+            DataTable dt = bo.translateToDataTable(bo.listAll());
+
+            foreach (DataRow dr in dt.Rows)
+                Console.WriteLine("{0}",dr[DataDictBo.DataDictAttr.KEY.ToString()]);
+                
         }
 
         private void sqLiteDataAdapter1_RowUpdated(object sender, System.Data.Common.RowUpdatedEventArgs e)

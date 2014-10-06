@@ -17,8 +17,10 @@ namespace 中国数字书法
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+           
             //Application.Run(new Form_dh());
             Application.Run(new TestSqlite());
+
         }
     }
 }
